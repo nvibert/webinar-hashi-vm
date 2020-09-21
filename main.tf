@@ -23,7 +23,7 @@ data "vsphere_resource_pool" "pool" {
 }
 
 data "vsphere_host" "host" {
-  name          = "10.10.10.68"
+  name          = "10.2.32.4"
   datacenter_id = data.vsphere_datacenter.dc.id
 }
 
