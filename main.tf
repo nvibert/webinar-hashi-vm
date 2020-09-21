@@ -150,7 +150,7 @@ resource "vsphere_virtual_machine" "terraform-photo" {
   disk {
     label = "disk0"
     size  = 20
-    thin_provisioned = false
+    thin_provisioned = true
   }
   clone {
     template_uuid = data.vsphere_virtual_machine.photo.id
